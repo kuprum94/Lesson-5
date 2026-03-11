@@ -1,69 +1,94 @@
-[index.html](https://github.com/user-attachments/files/25894984/index.html)
-<!DOCTYPE html>
-<html lang="ru">
+[style.css](https://github.com/user-attachments/files/25894993/style.css)
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Галерея нейро-картин</title>
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
+body {
+    font-family: 'StratosSkyeng', sans-serif;
+    background-color: #0F0804;
+}
 
-<body>
-    <div class="header">
-        <div class="header__overlay">
-            <div class="header__link">
-                <a href="#gallery" class="header__anchor">Галерея</a>
-            </div>
-            <h1 class="header__title">Выставка нейро-картин</h1>
-        </div>
-    </div>
-    <div class="content">
-        <ul class="gallery" id="gallery">
-            <li class="gallery__item">
-                <img src="./images/1.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/2.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/3.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/4.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/5.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/6.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/7.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/8.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/9.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/10.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/11.png" class="image">
-            </li>
-            <li class="gallery__item">
-                <img src="./images/12.png" class="image">
-            </li>
-        </ul>
-    </div>
-    <div class="footer">
-        <div class="footer__overlay">
-            <p class="footer__text">Сделано руками {твое имя}</p>
-        </div>
-    </div>
-</body>
+.header {
+    height: 100vh;
+    background-image: url(images/13.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-</html>
+.header__overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 80.49%, #0F0804 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title {
+    margin: auto;
+    font-size: 96px;
+    text-align: center;
+    color: white;
+    max-width: 658px;
+    font-weight: 400;
+}
+
+.header__link {
+    height: 90px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(11.5px);
+}
+
+.header__link:hover {
+    opacity: .8;
+}
+
+.header__anchor {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    /* Выключает точки у списка */
+    list-style-type: none;
+    margin: 173px auto;
+
+}
+
+.gallery__item {
+
+}
+
+.image {
+    
+}
+
+.footer {
+    height: 100vh;
+    background-image: url(./images/7.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__overlay {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #0F0804 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.footer__text {
+    margin: auto;
+    font-size: 40px;
+    color: white;
+}
